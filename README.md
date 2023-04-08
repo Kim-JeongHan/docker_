@@ -30,6 +30,7 @@
         docker run -it \
             --init \
             --ipc=host \
+            --gpus all \
             --shm-size=8G \
             --privileged \
             --net=host \
@@ -48,7 +49,7 @@
             ros/melodic:base \
             ${OTHER_PARAMS[@]}  \
             /bin/bash  \
-            --gpus '"device=0"'
+
         ```
         
 5. docker container안에서 실행
