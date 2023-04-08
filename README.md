@@ -47,7 +47,8 @@
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
             ros/melodic:base \
             ${OTHER_PARAMS[@]}  \
-            /bin/bash
+            /bin/bash  \
+            --gpus '"device=0"'
         ```
         
 5. docker container안에서 실행
