@@ -45,7 +45,7 @@
             -v /home/$USER/workspace:/home/$USER/workspace \
             -v /dev:/dev \
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-            ros/melodic:base \
+            osrf/ros:melodic-desktop-full-bionic \
             ${OTHER_PARAMS[@]}  \
             /bin/bash  \
 
