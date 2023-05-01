@@ -60,3 +60,6 @@ docker run -it \
     ${OTHER_PARAMS[@]}  \
     /bin/bash  
 export containerId=$(docker ps -l -q)
+
+
+
