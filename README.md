@@ -2,7 +2,7 @@
 2. dockerfile build하기
     
     ```jsx
-    sudo docker build --no-cache --force-rm -f Dockerfile --build-arg HOST_USER=$USER -t ros/melodic:base .
+    sudo docker build --no-cache --force-rm -f Dockerfile --build-arg HOST_USER=$USER -t osrf/ros:melodic-desktop-full-bionic .
     ```
     
     - dockerfile을 이용하여 빌드 수행
@@ -30,7 +30,6 @@
         docker run -it \
             --init \
             --ipc=host \
-            --gpus all \
             --shm-size=8G \
             --privileged \
             --net=host \
