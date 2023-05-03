@@ -1,7 +1,7 @@
 1. dockerfile build하기
     
     ```jsx
-    sudo docker build --no-cache --force-rm -f Dockerfile --build-arg HOST_USER=$USER -t osrf/ros:humble .
+    sudo docker build --no-cache --force-rm -f Dockerfile --build-arg HOST_USER=$USER -t ros:humble-set .
     ```
     
     - dockerfile을 이용하여 빌드 수행
@@ -44,7 +44,7 @@
             ${ENV_PARAMS[@]} \
             -v /dev:/dev \
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-            ros:humble \
+            ros:humble-set \
             ${OTHER_PARAMS[@]}  \
             /bin/bash  \
 
