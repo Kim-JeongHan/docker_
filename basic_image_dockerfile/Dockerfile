@@ -54,5 +54,6 @@ RUN mkdir -p /etc/sudoers.d && \
 USER ${UNAME}
 WORKDIR $HOME
 
+RUN rosdep init
 RUN rosdep update 
 RUN rosdep fix-permissions 
