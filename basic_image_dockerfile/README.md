@@ -42,13 +42,14 @@
             --env="QT_X11_NO_MITSHM=1" \
             ${ENV_PARAMS[@]} \
             -v /dev:/dev \
+            -v $HOME/.Xauthority:/root/.Xauthority:rw \
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
             ros:humble-set \
             ${OTHER_PARAMS[@]}  \
             /bin/bash  
 
         ```
---ipc=host를 
+--ipc=host를 linux기반에서는 넣어주어야한다.
 
 
 ---
