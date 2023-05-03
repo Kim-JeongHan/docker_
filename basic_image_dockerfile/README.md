@@ -29,7 +29,6 @@
         ```jsx
         docker run -it \
             --init \
-            --ipc=host \
             --shm-size=8G \
             --privileged \
             --net=host \
@@ -46,9 +45,9 @@
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
             ros:humble-set \
             ${OTHER_PARAMS[@]}  \
-            /bin/bash  \
+            /bin/bash  
 
         ```
-
+--ipc=host를 
 ---
 만약 자신이 humble이 아닌 다른 foxy나 rolling을 사용하고 싶다면 그에 맞게 수정해서 사용하면된다.
