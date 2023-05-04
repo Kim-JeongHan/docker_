@@ -46,7 +46,6 @@
             -v $HOME/.Xauthority:/root/.Xauthority:rw \
             -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
             ros:humble-set \
-            --name 'ur3'
             ${OTHER_PARAMS[@]}  \
             /bin/bash  
 
